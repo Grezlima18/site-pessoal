@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.main-content {
+    padding: 2em;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar h2 {
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 15px 0;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #555;
+}
+
+main {
+    margin-left: 260px;
+    padding: 20px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.profile-pic {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.container {
+    margin-bottom: 40px;
+}
+
+.portfolio-item {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item a {
+    color: #333;
+    font-weight: bold;
+}
+
+.portfolio-item a:hover {
+    text-decoration: underline;
+}
+
+.experiencia-item {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.experiencia-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.experiencia-item p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.experiencia-item ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.experiencia-item li {
+    line-height: 1.6;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #fff;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        display: none;
+    }
+
+    .sidebar.active {
+        display: block;
+    }
+
+    main {
+        margin-left: 0;
+    }
+}
